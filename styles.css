@@ -184,3 +184,55 @@ h1 span {
 .amount {
   font-family: inherit; /* This makes them use the Montserrat font set on the body */
 }
+
+/* === MOBILE FRIENDLY STYLES === */
+/* This media query makes the layout stack vertically on small screens and ensures the image is not cropped and the logo is larger */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    height: auto; /* Let the container grow as needed */
+  }
+  .content, .image-panel {
+    flex: none;
+    width: 100%;
+    padding: 24px 10px; /* Less padding on mobile */
+    margin-left: 0; /* Remove left margin on mobile */
+  }
+  .content > * {
+    margin-left: 0; /* Remove left margin for all content on mobile */
+  }
+  /* Center the GIVE button on mobile */
+  .give-button {
+    min-width: 140px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .donation-box {
+    max-width: 100%;
+  }
+  .footnote {
+    max-width: 100%;
+  }
+  .logo img {
+    height: 100px; /* Make the logo larger on mobile */
+    max-width: 95vw;
+  }
+  .impact-image {
+    width: 100%; /* Make the image fill the width */
+    height: auto; /* Let the image keep its aspect ratio */
+    max-height: none; /* Remove any max-height so it doesn't crop */
+    object-fit: contain; /* Make sure the image is not cropped */
+    display: block;
+    margin: 0 auto;
+  }
+}
