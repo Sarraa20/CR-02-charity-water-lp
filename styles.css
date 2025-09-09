@@ -37,6 +37,11 @@ html, body {
   color: #000;
 }
 
+/* Move all content inside the blue panel toward the center, but do not center it */
+.content > * {
+  margin-left: 15%; /* Move content to the right, but keep it left-aligned */
+}
+
 /* === LOGO === */
 .logo {
   font-size: 1.2rem;
