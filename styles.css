@@ -11,15 +11,24 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* === PAGE BACKGROUND === */
+/* This fills the top of the page with white above the panels */
+.page-bg {
+  background: #fff;
+  min-height: 15vh; /* Fill the top of the page height */
+}
+
 /* === LAYOUT === */
+/* The main container is now 85% of the viewport height */
 .container {
   display: flex;
-  height: 100vh;
+  height: 85vh; /* Panels are 85% of the screen height */
 }
 
 /* === LEFT CONTENT PANEL === */
+/* Make the blue panel take up slightly more space than the image panel */
 .content {
-  flex: 1;
+  flex: 1.2; /* Blue panel is a bit wider */
   background-color: #77A8BB;
   padding: 60px 40px;
   display: flex;
@@ -32,7 +41,16 @@ html, body {
 .logo {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 0; /* Remove extra space below the logo so its size doesn't affect layout */
+}
+
+/* Crop and shrink the logo image by setting a smaller fixed height */
+.logo img {
+  height:200px;         /* Make the logo image smaller. Change this value to adjust size. */
+  width: auto;          /* Keep the logo's width proportional */
+  object-fit: cover;    /* Crop the image if needed */
+  display: block;       /* Remove extra space below the image */
+  overflow: hidden;     /* Hide anything outside the set height */
 }
 
 /* === HEADLINE === */
@@ -119,7 +137,7 @@ h1 span {
 
 /* === RIGHT IMAGE PANEL === */
 .image-panel {
-  flex: 1;
+  flex: 0.8; /* Image panel is a bit narrower */
   background-image: url('./assets/background.jpg'); /* <-- Replace this with your actual image file */
   background-size: cover;
   background-position: center;
