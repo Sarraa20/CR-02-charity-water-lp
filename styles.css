@@ -76,6 +76,8 @@ h1 span {
   margin-bottom: 30px;
   max-width: 480px;
   line-height: 1.5;
+  color: #fff;         /* Make the description text white */
+  font-weight: bold;   /* Make the description text bold */
 }
 
 /* === DONATION BOX === */
@@ -108,17 +110,20 @@ h1 span {
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: inherit; /* This makes them use the Montserrat font set on the body */
+  color: #9b9a9d; 
 }
 
 .donation-grid button:hover {
-  background-color: #CBCCD1;
+  background-color: #FFC907;
 }
 
 /* === GIVE BUTTON === */
+/* Center the GIVE button using margin auto and make it wider */
 .give-button {
   background-color: #FFC907;
   border: none;
-  padding: 15px 35px;
+  padding: 15px 60px;   /* Increase the second value for a wider button */
+  min-width: 220px;     /* Set a minimum width for the button */
   font-size: 16px;
   font-weight: bold;
   border-radius: 6px;
@@ -126,17 +131,20 @@ h1 span {
   transition: background-color 0.3s ease;
   width: fit-content;
   font-family: inherit; /* This makes them use the Montserrat font set on the body */
+  margin-left: auto;  /* Center the button horizontally */
+  margin-right: auto; /* Center the button horizontally */
+  display: block;
 }
 
 .give-button:hover {
-  background-color: #FFC907;
+  background-color: #fff;
 }
 
 /* === FOOTNOTE === */
 .footnote {
   margin-top: 20px;
   font-size: 0.9rem;
-  max-width: 400px;
+  max-width: 600px;
   color: #333;
 }
 
