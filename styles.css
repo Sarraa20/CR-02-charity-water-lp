@@ -7,7 +7,8 @@
 
 html, body {
   height: 100%;
-  font-family: 'Proxima Nova', sans-serif;
+  /* Use the 'Montserrat' font for all text. If not available, use Arial or a generic sans-serif font. */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* === LAYOUT === */
@@ -83,6 +84,7 @@ h1 span {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: inherit; /* This makes them use the Montserrat font set on the body */
 }
 
 .donation-grid button:hover {
@@ -100,6 +102,7 @@ h1 span {
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: fit-content;
+  font-family: inherit; /* This makes them use the Montserrat font set on the body */
 }
 
 .give-button:hover {
@@ -144,4 +147,9 @@ h1 span {
   border: none; /* No border for full coverage */
   margin: 0; /* No margin for full coverage */
   background: #fff;
+}
+
+/* Make sure all buttons and amount text use the same font as the rest of the page */
+.amount {
+  font-family: inherit; /* This makes them use the Montserrat font set on the body */
 }
