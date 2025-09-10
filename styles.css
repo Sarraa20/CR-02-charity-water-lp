@@ -14,7 +14,7 @@ html, body {
 /* === PAGE BACKGROUND === */
 /* This fills the top of the page with white above the panels */
 .page-bg {
-  background: #fff;
+  background: #ffffff;
   min-height: 15vh; /* Fill the top of the page height */
 }
 
@@ -51,8 +51,8 @@ html, body {
 
 /* Crop and shrink the logo image by setting a smaller fixed height */
 .logo img {
-  height:200px;         /* Make the logo image smaller. Change this value to adjust size. */
-  width: auto;          /* Keep the logo's width proportional */
+  height:100px;         /* Make the logo image smaller. Change this value to adjust size. */
+  width: 300px;          /* Keep the logo's width proportional */
   object-fit: cover;    /* Crop the image if needed */
   display: block;       /* Remove extra space below the image */
   overflow: hidden;     /* Hide anything outside the set height */
