@@ -151,7 +151,7 @@ h1 span {
   margin-top: 20px;
   font-size: 0.9rem;
   max-width: 600px;
-  color: #333;
+  color: #fff; /* Make the footnote text white */
 }
 
 /* === RIGHT IMAGE PANEL === */
