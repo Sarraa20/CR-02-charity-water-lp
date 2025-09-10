@@ -81,12 +81,14 @@ h1 span {
 }
 
 /* === DONATION BOX === */
+/* Add a thick white outline around the donation box to make it stand out */
 .donation-box {
   background-color: #CBCCD1;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
   max-width: 500px;
+  border: 20px solid #fff; /* Thick white outline */
 }
 
 .donation-title {
