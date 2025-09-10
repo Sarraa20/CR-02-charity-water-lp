@@ -113,6 +113,10 @@ h1 span {
   color: #9b9a9d; 
 }
 
+.donation-grid button.wide {
+  grid-column: span 2; /* Spans two columns, making it wider */
+}
+
 .donation-grid button:hover {
   background-color: #FFC907;
 }
